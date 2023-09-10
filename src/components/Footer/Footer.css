@@ -1,4 +1,11 @@
 .footer {
     min-height: 20px;
     padding: 10px;
+    text-align: center;
 }
+
+/* .footer__span {
+    margin: 0 auto;
+    display: block;
+    max-width: 200px;
+} */

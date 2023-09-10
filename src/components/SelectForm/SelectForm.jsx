@@ -1,11 +1,17 @@
 import "./SelectForm.css";
 import { useState } from "react";
 
-export default function SelectForm({ title, options }) {
+export default function SelectForm({ name, title, options, onChange }) {
     return (
-        <label className='select-form'>
+        <label className="select-form">
             {title}
-            <select className='select-form__select-area'>
+            <select
+                className="select-form__select-area"
+                onChange={(e) => {
+                    onChange(e);
+                }}
+                name={name}
+            >
                 {options.map((option) => (
                     <option key={option} value={option}>
                         {" "}
