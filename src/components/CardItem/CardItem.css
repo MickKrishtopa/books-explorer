@@ -1,0 +1,30 @@
+.card-item {
+    max-width: 300px;
+    min-height: 400px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: start; */
+    padding: 10px;
+    background-color: rgb(157, 202, 187);
+}
+
+.card-item__img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card-item__category {
+    margin: 10px 0 0;
+    font-size: 14px;
+}
+
+.card-item__title {
+    margin: 20px 0 0;
+    font-size: 20px;
+}
+
+.card-item__author {
+    margin: 20px 0 0;
+    font-size: 14px;
+}

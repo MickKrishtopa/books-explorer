@@ -1,0 +1,11 @@
+.select-form {
+    font-size: 18px;
+}
+.select-form__select-area {
+    margin-left: 10px;
+    height: 25px;
+    text-align: center;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

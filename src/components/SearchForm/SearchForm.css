@@ -1,0 +1,8 @@
+.search-form {
+    max-width: 60vw;
+    margin: 0 auto;
+}
+.search-form__filter-area {
+    display: flex;
+    justify-content: space-around;
+}
