@@ -99,10 +99,12 @@ function App() {
                     }
                 />
 
-                <Route
-                    path="/book/:id"
-                    element={<CardDetails data={detailsCard} />}
-                />
+                {!!detailsCard && (
+                    <Route
+                        path="/book/:id"
+                        element={<CardDetails data={detailsCard} />}
+                    />
+                )}
                 <Route path="*" element={<NotFound />} />
             </Routes>
 
