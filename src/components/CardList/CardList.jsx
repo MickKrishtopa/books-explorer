@@ -8,6 +8,7 @@ export default function CardList({
     data,
     cardList,
     onAddMoreBtnClick,
+    setDetailsCard,
 }) {
     // const cardList = data?.items;
     return (
@@ -17,21 +18,15 @@ export default function CardList({
             )}
             <ul className="card-list__list">
                 {cardList &&
-                    cardList.map((book) => (
-                        <CardItem
-                            key={book.etag}
-                            title={book.volumeInfo.title}
-                            img={book.volumeInfo.imageLinks?.thumbnail}
-                            category={
-                                book.volumeInfo.categories ||
-                                "no category information"
-                            }
-                            author={
-                                book.volumeInfo.authors?.join(", ") ||
-                                "no information about the author"
-                            }
-                        />
-                    ))}
+                    cardList.map((book) => {
+                        return (
+                            <CardItem
+                                book={book}
+                                setDetailsCard={setDetailsCard}
+                                key={book.etag}
+                            />
+                        );
+                    })}
             </ul>
             {isLoading ? <Preloader /> : null}
             {data && (

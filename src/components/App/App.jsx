@@ -4,10 +4,12 @@ import Header from "../Header/Header";
 import SearchForm from "../SearchForm/SearchForm";
 import CardLlist from "../CardList/CardList";
 import Footer from "../Footer/Footer";
-import Preloader from "../Preloader/Preloader";
+import CardDetails from "../CardDetails/CardDetails";
+import NotFound from "../NotFound/NotFound";
 
 import api from "../../utils/api";
-import { useEffect, useState } from "react";
+import { useState } from "react";
+import { Route, Routes, useNavigate } from "react-router-dom";
 
 function App() {
     const [isLoading, setIsLoading] = useState(false);
@@ -19,6 +21,7 @@ function App() {
         category: "all",
         sort: "relevance",
     });
+    const [detailsCard, setDetailsCard] = useState(null);
 
     const checkFilters = (filters) => {
         let filtersUrl = "";
@@ -82,12 +85,26 @@ function App() {
                 value={searchValue}
             />
 
-            <CardLlist
-                isLoading={isLoading}
-                data={data}
-                cardList={cardList}
-                onAddMoreBtnClick={onAddMoreBtnClick}
-            />
+            <Routes>
+                <Route
+                    path="/"
+                    element={
+                        <CardLlist
+                            setDetailsCard={setDetailsCard}
+                            isLoading={isLoading}
+                            data={data}
+                            cardList={cardList}
+                            onAddMoreBtnClick={onAddMoreBtnClick}
+                        />
+                    }
+                />
+
+                <Route
+                    path="/book/:id"
+                    element={<CardDetails data={detailsCard} />}
+                />
+                <Route path="*" element={<NotFound />} />
+            </Routes>
 
             <Footer />
         </div>

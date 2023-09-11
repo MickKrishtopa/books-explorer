@@ -1,0 +1,75 @@
+.not-found {
+    padding: 246px 440px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: rgb(43, 41, 41);
+    min-height: 394px;
+}
+
+.not-found__title {
+    text-align: center;
+    font-family: "Inter", Helvetica, sans-serif;
+    font-size: 140px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.21;
+    margin: 0 0 5px;
+}
+
+.not-found__description {
+    margin: 0;
+    text-align: center;
+    font-family: "Inter", Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.not-found__button-back {
+    color: #4285f4;
+    text-align: center;
+    font-family: "Inter", Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.21;
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.not-found__button-back:hover {
+    opacity: 0.7;
+}
+
+@media screen and (max-width: 900px) {
+    .not-found {
+        padding: 408px 184px 222px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: white;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .not-found {
+        padding: 329px 10px 30px;
+        min-height: 421px;
+    }
+
+    .not-found__title {
+        font-size: 80px;
+        margin: 0 0 10px;
+    }
+
+    .not-found__description {
+        font-size: 12px;
+    }
+
+    .not-found__button-back {
+        font-size: 12px;
+    }
+}

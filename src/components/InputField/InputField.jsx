@@ -1,9 +1,13 @@
+import { useNavigate } from "react-router";
 import "./InputField.css";
 
 export default function InputField({ onSubmitForm, value, onChange }) {
+    const navigate = useNavigate();
+
     const onSubmit = (e) => {
         e.preventDefault();
         onSubmitForm(value);
+        navigate("/");
     };
     return (
         <form onSubmit={(e) => onSubmit(e)} className="input-field">

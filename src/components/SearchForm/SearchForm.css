@@ -1,6 +1,6 @@
 .search-form {
     max-width: 60vw;
-    margin: 0 auto;
+    margin: 0 auto 30px;
 }
 .search-form__filter-area {
     display: flex;
