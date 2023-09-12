@@ -1,9 +1,14 @@
 import { useNavigate } from "react-router";
 import "./CardDetails.css";
+import placeholder from "../../images/notfound.jpg";
 
 export default function CardDetails({ data }) {
     const { title, authors, description, categories, imageLinks } =
         data.volumeInfo;
+
+    const cardImage = imageLinks?.thumbnail
+        ? imageLinks?.thumbnail
+        : placeholder;
 
     const navigate = useNavigate();
     return (
@@ -16,7 +21,7 @@ export default function CardDetails({ data }) {
             </button>
             <div className="card-details">
                 <img
-                    src={imageLinks?.thumbnail}
+                    src={cardImage}
                     alt={title}
                     className="card-details__image"
                 />

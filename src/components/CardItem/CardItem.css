@@ -21,15 +21,17 @@
 .card-item__category {
     margin: 10px 0 0;
     font-size: 14px;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    text-decoration: none;
+    font-family: "Inter", Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
 }
 
 .card-item__title {
     margin: 20px 0 0;
     font-size: 20px;
-
+    font-family: "Inter", Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
     text-overflow: ellipsis;
     overflow: hidden;
     -webkit-line-clamp: 2;
@@ -40,6 +42,7 @@
 .card-item__author {
     margin: 20px 0 0;
     font-size: 14px;
-    text-overflow: ellipsis;
-    overflow: hidden;
+    font-family: "Inter", Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
 }

@@ -1,14 +1,22 @@
 import "./SelectForm.css";
-import { useState } from "react";
 
-export default function SelectForm({ name, title, options, onChange }) {
+import { useDispatch } from "react-redux";
+import { setFilters } from "../../store/cardsSlice";
+
+export default function SelectForm({ name, title, options }) {
+    const dispatch = useDispatch();
     return (
         <label className="select-form">
             {title}
             <select
                 className="select-form__select-area"
                 onChange={(e) => {
-                    onChange(e);
+                    dispatch(
+                        setFilters({
+                            name: e.target.name,
+                            value: e.target.value,
+                        })
+                    );
                 }}
                 name={name}
             >
@@ -22,35 +30,3 @@ export default function SelectForm({ name, title, options, onChange }) {
         </label>
     );
 }
-
-// export default function Dropdown({ options, selected, setSelected }) {
-//     const [isActiveSelect, setActiveSelect] = useState(false);
-
-//     return (
-//         <div className='Dropdown'>
-//             <div
-//                 className='DropdownButton'
-//                 onClick={(event) => setActiveSelect(!isActiveSelect)}>
-//                 <p>{selected}</p>
-//                 <span></span>
-//             </div>
-//             {isActiveSelect && (
-//                 <div className='DropdownContent'>
-//                     {options.map((option) => {
-//                         return (
-//                             <div
-//                                 key={option}
-//                                 className='DropdownItem'
-//                                 onClick={(event) => {
-//                                     setSelected(option);
-//                                     setActiveSelect(false);
-//                                 }}>
-//                                 {option}
-//                             </div>
-//                         );
-//                     })}
-//                 </div>
-//             )}
-//         </div>
-//     );
-// }

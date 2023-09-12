@@ -1,10 +1,10 @@
 .not-found {
-    padding: 246px 440px 60px;
+    padding: 100px 100px 60px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     color: rgb(43, 41, 41);
-    min-height: 394px;
+    min-height: 400px;
 }
 
 .not-found__title {
@@ -27,7 +27,6 @@
 }
 
 .not-found__button-back {
-    color: #4285f4;
     text-align: center;
     font-family: "Inter", Helvetica, sans-serif;
     font-size: 14px;
@@ -35,9 +34,16 @@
     font-weight: 400;
     line-height: 1.21;
     background-color: inherit;
-    border: none;
-    cursor: pointer;
     transition: 1s;
+    display: block;
+    width: 80%;
+    height: 30px;
+    background-color: rgb(73, 141, 153);
+    border: none;
+    border-radius: 5px;
+    margin: 40px auto;
+    padding: 0;
+    cursor: pointer;
 }
 
 .not-found__button-back:hover {
@@ -46,20 +52,12 @@
 
 @media screen and (max-width: 900px) {
     .not-found {
-        padding: 408px 184px 222px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        color: white;
+        padding: 50px 30px;
+        min-height: 200px;
     }
 }
 
 @media screen and (max-width: 600px) {
-    .not-found {
-        padding: 329px 10px 30px;
-        min-height: 421px;
-    }
-
     .not-found__title {
         font-size: 80px;
         margin: 0 0 10px;

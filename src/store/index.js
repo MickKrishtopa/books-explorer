@@ -4,6 +4,6 @@ import cardsReducer from "./cardsSlice";
 
 export default configureStore({
     reducer: {
-        cards: cardsReducer,
+        cardList: cardsReducer,
     },
 });
