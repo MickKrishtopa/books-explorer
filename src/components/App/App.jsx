@@ -16,8 +16,9 @@ function App() {
     return (
         <div className="app">
             <Header />
-            <SearchForm />
+
             <main>
+                <SearchForm />
                 <Routes>
                     <Route path="/" element={<CardLlist />} />
 

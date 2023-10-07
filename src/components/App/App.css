@@ -2,5 +2,10 @@
     max-width: 1280px;
     margin: 0 auto;
     background-color: #d9ec93;
-    min-height: 100vh;
+    min-height: 95vh;
+    display: flex;
+    flex-direction: column;
+}
+main {
+    flex: 1 1 auto;
 }
