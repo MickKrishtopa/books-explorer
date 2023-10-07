@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/books-explorer/static/css/main.d46f2cd8.css",
-    "main.js": "/books-explorer/static/js/main.66a04829.js",
+    "main.css": "/books-explorer/static/css/main.a54a2d5f.css",
+    "main.js": "/books-explorer/static/js/main.814687b5.js",
     "static/media/Inter-Medium.woff": "/books-explorer/static/media/Inter-Medium.9053572c46aeb4b16caa.woff",
     "static/media/Inter-Black.woff": "/books-explorer/static/media/Inter-Black.c6938660eec019fefd68.woff",
     "static/media/Inter-Regular.woff": "/books-explorer/static/media/Inter-Regular.8c206db99195777c6769.woff",
@@ -11,11 +11,11 @@
     "static/media/notfound.jpg": "/books-explorer/static/media/notfound.ff4400a1d2865618e588.jpg",
     "index.html": "/books-explorer/index.html",
     "static/media/icon__search.svg": "/books-explorer/static/media/icon__search.deebd7e166d4088933d1.svg",
-    "main.d46f2cd8.css.map": "/books-explorer/static/css/main.d46f2cd8.css.map",
-    "main.66a04829.js.map": "/books-explorer/static/js/main.66a04829.js.map"
+    "main.a54a2d5f.css.map": "/books-explorer/static/css/main.a54a2d5f.css.map",
+    "main.814687b5.js.map": "/books-explorer/static/js/main.814687b5.js.map"
   },
   "entrypoints": [
-    "static/css/main.d46f2cd8.css",
-    "static/js/main.66a04829.js"
+    "static/css/main.a54a2d5f.css",
+    "static/js/main.814687b5.js"
   ]
 }
